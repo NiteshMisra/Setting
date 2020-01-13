@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/general_refresh"
+    android:background="#FCFCFC"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".GeneralFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:id="@+id/general_layout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/general_name_text"
+                android:layout_width="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Name"
+                android:textSize="12sp"
+                android:textColor="#131b37"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/general_name"
+                android:layout_width="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/general_name_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="8dp"
+                android:cursorVisible="false"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/edittext_background"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/general_mob"
+                android:layout_width="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/general_name"
+                android:text="Mobile Number"
+                android:textSize="12sp"
+                android:textColor="#131b37"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/general_mobile_no"
+                android:layout_width="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/general_mob"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/edittext_background"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/general_email"
+                android:layout_width="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/general_mobile_no"
+                android:text="E-mail"
+                android:textSize="12sp"
+                android:textColor="#131b37"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/general_email_id"
+                android:layout_width="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/general_email"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="8dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="30dp"
+                android:textSize="15sp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/edittext_background"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/general_user"
+                android:layout_width="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/general_email_id"
+                android:text="Username"
+                android:textSize="12sp"
+                android:textColor="#131b37"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/general_user_name"
+                android:layout_width="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/general_user"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/edittext_background"
+                android:layout_height="wrap_content" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/general_save"
+            android:layout_width="0dp"
+            android:text="Save Profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textStyle="bold"
+            android:textColor="#FCFCFC"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="30dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/save_profile_background"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/general_no_internet"
+            android:layout_width="0dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="No Internet Connection"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="0dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
